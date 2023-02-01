@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: 'vibesregular';
+    src: url('/font/font/greatvibes-regular-webfont.woff2') format('woff2'),
+        url('/font/font/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+}
+#chezrose{
+    width: 180px;
+}
+.classnav{
+    background-color:white;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    height: 140px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+nav ul li{
+    margin-top: 50px;
+    list-style-type: none;
+    font-family: vibesregular;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+#boite{
+    width: 1450px; 
+}
+.divarticle{
+    display: flex;
+}
+#article1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 160px;
+    margin-right: 300px;
+}
+#bluet{
+    width: 500px;
+}
+.divarticle2{
+    display: flex;
+}
+#article2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 160px;
+}
+#bluet2{
+    width: 500px;
+}
+h2{ 
+    font-family: vibesregular;
+    font-size: 50px;
+}
