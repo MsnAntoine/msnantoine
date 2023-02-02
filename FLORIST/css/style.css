@@ -1,4 +1,4 @@
-
+/* police d ecriture */
 @font-face {
     font-family: 'vibesregular';
     src: url('/font/font/greatvibes-regular-webfont.woff2') format('woff2'),
@@ -6,27 +6,85 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
-    margin: 0px;
+@font-face {
+    font-family: 'rankfine_personal_useregular';
+    src: url('/font/font/rankfine-webfont.woff2') format('woff2'),
+        url('/font/font/rankfine-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width: 425px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 135px;
+        gap: 10px;
+    }
+    #chezrosemobile{ visibility: hidden;
+        display: flex;
+    }
+    #banderole{
+        width: 600px !important;
+        height: 300px !important;
+}
+    #lavande{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    #article1{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+}
+#bluet{
+    margin-left: -500px;
+    width: 200px!important;
+    height: 200px;
+    /* width: 500px; */
+    /* margin-right: 150px; */
+}
+.ligne1carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.ligne2carte{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#overlay{
+    display: none;
 }
 #chezrose{
-    width: 180px;
+    display: none;
 }
-.classnav{
-    background-color:white;
-    position: fixed;
-    width: 100%;
+
+}
+body{
+    margin: 0px;
+}
+#chezrosemobile{
+    width: 100px;
+    display: none;
+}
+/* nav et logo */
+#chezrose{
+    width: 200px;
+    margin-top: -70px;
 }
 nav{
-    height: 140px;
+    position: fixed;
+    width: 100%;
+    background-color:white;
 }
-nav ul {
+nav ul{
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 nav ul li{
-    margin-top: 50px;
     list-style-type: none;
     font-family: vibesregular;
     font-size: 30px;
@@ -34,23 +92,29 @@ nav ul li{
 a{
     text-decoration: none;
 }
-#boite{
-    width: 1450px; 
+/* banderole */
+#banderole{
+    margin-top: 250px;
+    width: 1900px; 
+    height: 500px; 
 }
+/* article 1 et 2 photo */
 .divarticle{
-    display: flex;
+display: flex;
 }
 #article1{
-    display: flex;
+    margin-top: 80px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     background-color: white;
     margin-left: 160px;
     margin-right: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #bluet{
     width: 500px;
+    margin-right: 150px;
 }
 .divarticle2{
     display: flex;
@@ -63,11 +127,239 @@ a{
     background-color: white;
     margin-left: 300px;
     margin-right: 160px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#bluet2{
+#lavande{
     width: 500px;
+    margin-left: 150px;
 }
 h2{ 
     font-family: vibesregular;
     font-size: 50px;
+    margin-bottom: 10px;
+}
+#overlay{
+    width:1500px;
+    height: 300px;
+    margin-left: 210px;
+    margin-top: 100px;
+}
+/* display fley linge numero 1 */
+.ligne1carte{
+    display: flex;
+    justify-content: center;
+}
+/* carte 1 */
+.card{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card a { 
+    color: #333; 
+    text-decoration: none;
+}
+.card-image{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color: black;
+}
+h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: vibesregular;
+    font-size: 30px;
+    color: black;
+}
+.card-texte{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+/* carte2 */
+.carte2{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card2{ 
+    color: #333; 
+    text-decoration: none;
+}
+.card-image2{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price2{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color:  black;
+}
+.card-texte2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    color: rgb(92, 91, 91) ;
+}
+/* carte3 */
+.carte3{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card3{ 
+    color: #333; 
+    text-decoration: none;
+}
+.card-image3{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price3{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color: black ;
+}
+.card-texte3{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    color: rgb(92, 91, 91) ;
+}
+/* display fley linge numero 2 */
+.ligne2carte{ 
+    display: flex;
+    justify-content: center;
+}
+/* carte 4 */
+.card4{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card a { 
+    color: #333; 
+    text-decoration:none;
+}
+.card-image4{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price4{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color: black ;
+}
+.card-texte4{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+/* carte5 */
+.carte5{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card5{ 
+    color: #333; 
+    text-decoration: none;
+}
+.card-image5{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price5{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color:black ;
+}
+.card-texte5{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    color: rgb(92, 91, 91);
+}
+/* carte6 */
+.carte6{
+    width: 400px; 
+    margin: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 20px #999; 
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+.card6{ 
+    color: #333; 
+    text-decoration: none;
+}
+.card-image6{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.price6{
+    display: flex;
+    justify-content: center;
+    font-family: vibesregular;
+    font-size: 30px;
+    color: black;
+}
+.card-texte6{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    color: rgb(92, 91, 91);
+}
+/* footer bas de page */
+.GOODBYE{
+    background-color:rgb(219, 189, 178);
+    margin-top: 50px;
+    height: 100px;
 }
